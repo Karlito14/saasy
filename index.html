@@ -6,7 +6,11 @@
     <link href="./assets/src/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" type="image/png" href="./assets/images/favicon-removebg-preview.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-removebg-preview.png"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
@@ -17,31 +21,74 @@
     ></script>
     <title>Saasy</title>
   </head>
-  <body class="min-h-screen bg-gradient-to-r from-sky-500 to-purple-500 p-8 text-slate-600">
+  <body
+    class="min-h-screen bg-gradient-to-r from-sky-500 to-purple-500 p-8 text-slate-600"
+  >
     <div class="container mx-auto min-h-screen rounded-2xl bg-white">
-      <header class="grid grid-cols-3 items-center px-12 py-4 border-b">
-        <img src="./assets/images/logo.png" alt="logo" class="w-10">
+      <!-- - - - - - - - - - - HEADER - - - - - - - - - - -->
+      <header class="grid grid-cols-3 items-center border-b px-12 py-4">
+        <img src="./assets/images/logo.png" alt="logo" class="w-10" />
         <nav>
-          <ul class="flex justify-center items-center gap-x-6">
+          <ul class="flex items-center justify-center gap-x-6">
             <li>
-              <a class="hover:text-sky-500 duration-150 font-semibold" href="#">Home</a>
+              <a class="font-semibold duration-150 hover:text-sky-500" href="#"
+                >Home</a
+              >
             </li>
             <li>
-              <a class="hover:text-sky-500 duration-150 font-semibold" href="#">Invoices</a>
+              <a class="font-semibold duration-150 hover:text-sky-500" href="#"
+                >Invoices</a
+              >
             </li>
             <li>
-              <a class="hover:text-sky-500 duration-150 font-semibold" href="#">Clients</a>
+              <a class="font-semibold duration-150 hover:text-sky-500" href="#"
+                >Clients</a
+              >
             </li>
             <li>
-              <a class="hover:text-sky-500 duration-150 font-semibold" href="#">Expenses</a>
+              <a class="font-semibold duration-150 hover:text-sky-500" href="#"
+                >Expenses</a
+              >
             </li>
           </ul>
         </nav>
-        <div class="flex justify-end gap-x-6 items-center">
+        <div class="flex items-center justify-end gap-x-6">
           <i class="fa-regular fa-bell fa-lg"></i>
-          <img src="https://randomuser.me/api/portraits/women/88.jpg" alt="person" class="w-8 rounded-full">
+          <img
+            src="https://randomuser.me/api/portraits/women/88.jpg"
+            alt="person"
+            class="w-8 rounded-full"
+          />
         </div>
       </header>
+      <!-- - - - - - - - - - - HEADER - - - - - - - - - - -->
+      <section class="flex items-center justify-between border-b px-12 py-8">
+        <ul class="flex gap-x-6">
+          <li>
+            <p class="border-r pr-2 font-bold">Cashflow</p>
+          </li>
+          <li>
+            <a href="#" class="font-semibold text-sky-500 duration-150"
+              >Last 7 days</a
+            >
+          </li>
+          <li>
+            <a href="#" class="font-semibold duration-150 hover:text-sky-500"
+              >Last 30 days</a
+            >
+          </li>
+          <li>
+            <a href="#" class="font-semibold duration-150 hover:text-sky-500"
+              >All time</a
+            >
+          </li>
+        </ul>
+        <button
+          class="rounded-lg bg-sky-500 px-4 py-2 font-bold text-white duration-150 hover:bg-sky-600"
+        >
+          + New invoice
+        </button>
+      </section>
     </div>
   </body>
 </html>
